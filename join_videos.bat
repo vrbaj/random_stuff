@@ -1,0 +1,1 @@
+ffmpeg -i UPRTv3.mp4 -i prezentace_programy.mp4 -filter_complex "[0:v:0][1:v:0]concat=n=2:v=1[outv]" -map "[outv]" output.mp4
